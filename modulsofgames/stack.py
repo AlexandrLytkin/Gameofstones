@@ -1,4 +1,3 @@
 stack = []
-# _stack1 = []
 
 

@@ -30,9 +30,11 @@ def check_stack(par1):
         cprint(par1, color='green')
     else:
         if marker.flag % 2 == 1:
+            cprint(stack, color='green')
             cprint(f'Все камни закончились победил {persons.person_1}', color='yellow')
         else:
-            cprint(f'{stack}Все камни закончились победил {persons.person_2}', color='yellow')
+            cprint(stack, color='green')
+            cprint(f'Все камни закончились победил {persons.person_2}', color='magenta')
         print(colored('Game Over', color='green', on_color='on_red', attrs=['underline']))
 
 
